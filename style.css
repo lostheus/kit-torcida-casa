@@ -217,6 +217,32 @@ section {
     color: #000000;
 }
 
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding: 18px 40px;
+    border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(var(--primary-rgb), 0.2);
+    transition: var(--transition);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    box-shadow: 0 8px 25px rgba(var(--primary-rgb), 0.35);
+    color: var(--white);
+}
+
 .btn-pulse {
     position: relative;
     overflow: hidden;
@@ -868,13 +894,17 @@ section {
 /* --- BLOCO 08 - OFERTA E PREÇOS (CLARO) --- */
 .pricing-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 550px;
+    align-items: stretch;
+    max-width: 900px;
     margin: 0 auto;
+    gap: 30px;
 }
 
 .pricing-grid .plan-card {
-    width: 100%;
+    flex: 1 1 380px;
+    max-width: 420px;
 }
 
 .bg-claro .plan-card {
