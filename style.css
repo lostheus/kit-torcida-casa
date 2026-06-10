@@ -894,17 +894,13 @@ section {
 /* --- BLOCO 08 - OFERTA E PREÇOS (CLARO) --- */
 .pricing-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    max-width: 900px;
+    max-width: 550px;
     margin: 0 auto;
-    gap: 30px;
 }
 
 .pricing-grid .plan-card {
-    flex: 1 1 380px;
-    max-width: 420px;
+    width: 100%;
 }
 
 .bg-claro .plan-card {
